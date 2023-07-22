@@ -1,0 +1,27 @@
+{
+  "name": "metadrop/composer-comments",
+  "description": "Add comments to your required packages to provide more info about why they are being used",
+  "type": "composer-plugin",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "rsanzante",
+      "role": "Developer",
+      "email": "ricardo@metadrop.net"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "composer-plugin-api": "^2"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Metadrop\\Composer\\Comments\\": "src/"
+    }
+  },
+  "extra": {
+    "class": "Metadrop\\Composer\\Comments\\CommentsPlugin"
+  }
+}
